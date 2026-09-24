@@ -1,0 +1,25 @@
+{
+  "name": "dummy_framework1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:staging": "cross-env ENV=staging npx playwright test",
+    "test:html": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.0.0"
+  }
+,
+  "dependencies": {
+    "dotenv": "^18.0.1"
+  }
+}
