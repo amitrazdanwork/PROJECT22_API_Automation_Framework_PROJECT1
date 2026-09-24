@@ -4,7 +4,7 @@ import { TokenManager } from '../utils/TokenManager';
 import { Booking } from '../src/models/booking.model';
 
 
-test('Test 1: Booking details for requested id gets retrieved successfully ', async ({ request }) => {
+test('Test 1 : Booking details for requested id gets retrieved successfully ', async ({ request }) => {
   
     const token = await TokenManager.generateNewToken();
     const api = new APIOperations(request);
